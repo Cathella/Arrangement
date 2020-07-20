@@ -1,0 +1,30 @@
+<div class="container pt-5">
+  <p id="notice"><%= notice %></p>
+
+  <p>
+    <strong>Description:</strong>
+  </p>
+  <p>
+    <%= @problem.description %>
+  </p>
+
+  <p>
+    <strong>Category:</strong>
+    <%= @problem.category %>
+  </p>
+
+  <hr>
+
+  <p>
+    <strong>Solution:</strong>
+  </p>
+
+  <div class="bg-light p-2 mb-5">
+    <p>
+      <%= @problem.solution %>
+    </p>
+  </div>
+
+  <%= link_to 'Edit', edit_problem_path(@problem) %> |
+  <%= link_to 'Back', problems_path %>
+</div>
