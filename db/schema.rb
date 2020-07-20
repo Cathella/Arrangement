@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(version: 2020_07_20_081322) do
 
   create_table "problems", force: :cascade do |t|
     t.text "description"
-    t.string "type"
+    t.string "category"
     t.text "solution"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

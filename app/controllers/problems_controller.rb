@@ -28,7 +28,8 @@ class ProblemsController < ApplicationController
 
     respond_to do |format|
       if @problem.save
-        format.html { redirect_to @problem, notice: 'Problem was successfully created.' }
+        # format.html { redirect_to @problem, notice: 'Problem was successfully created.' }
+        format.html { redirect_to root_path, notice: 'Problem was successfully created.' }
         format.json { render :show, status: :created, location: @problem }
       else
         format.html { render :new }
@@ -69,6 +70,6 @@ class ProblemsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def problem_params
-      params.require(:problem).permit(:description, :type, :solution)
+      params.require(:problem).permit(:description, :category, :solution)
     end
 end

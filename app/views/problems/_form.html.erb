@@ -11,22 +11,22 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :description %>
-    <%= form.text_area :description %>
+  <div class="form-group">
+    <%= form.label :category, :class => "form-label" %>
+    <%= form.text_field :category, :class => "form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :type %>
-    <%= form.text_field :type %>
+  <div class="form-group">
+    <%= form.label :description, :class => "form-label" %>
+    <%= form.text_area :description, :class => "form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :solution %>
-    <%= form.text_area :solution %>
+  <div class="form-group">
+    <%= form.label :solution, :class => "form-label" %>
+    <%= form.text_area :solution, :class => "form-control" %>
   </div>
 
-  <div class="actions">
+  <div class="form-group">
     <%= form.submit %>
   </div>
 <% end %>
